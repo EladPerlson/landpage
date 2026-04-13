@@ -297,7 +297,21 @@ body {
     transition: filter 0.35s ease;
   }
 
+  .video-frame video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 12px;
+    background: #000;
+    transition: filter 0.35s ease;
+  }
+
   .video-card:hover .video-frame iframe {
+    filter: brightness(1.05) saturate(1.08);
+  }
+
+  .video-card:hover .video-frame video {
     filter: brightness(1.05) saturate(1.08);
   }
 
